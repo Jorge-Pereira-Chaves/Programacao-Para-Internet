@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sistema de Pagamento Professores</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Sistema de Pagamento Professores</h1>
+
+        <label for="nivel">Nível do professor:</label>
+        <select id="nivel">
+            <option value="1">Nível 1 (R$12,00/hora)</option>
+            <option value="2">Nível 2 (R$17,00/hora)</option>
+            <option value="3">Nível 3 (R$25,00/hora)</option>
+        </select>
+
+        <label for="horas">Horas/aula por semana:</label>
+        <input type="number" id="horas" placeholder="Digite a quantidade de horas" />
+
+        <button id="calcular">Calcular salário</button>
+
+        <p id="resultado"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

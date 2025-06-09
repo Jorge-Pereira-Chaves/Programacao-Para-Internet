@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sistema de Vendas</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Sistema de Vendas</h1>
+        <label for="preco">Preço do produto (R$):</label>
+        <input type="number" id="preco" placeholder="Digite o preço" step="0.01" />
+
+        <label for="condicao">Condição de pagamento:</label>
+        <select id="condicao">
+            <option value="a">À vista em dinheiro ou cheque (10% desconto)</option>
+            <option value="b">À vista no cartão (15% desconto)</option>
+            <option value="c">Em duas vezes (sem juros)</option>
+            <option value="d">Em duas vezes (com 10% juros)</option>
+        </select>
+
+        <button id="calcular">Calcular valor</button>
+
+        <p id="resultado"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
